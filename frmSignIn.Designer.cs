@@ -28,21 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSignIn));
             this.label2 = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
             this.lblLastName = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtPssword = new System.Windows.Forms.TextBox();
             this.lblConfirmPassword = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.lblBirthDay = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.dtpBirthDay = new System.Windows.Forms.DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label2
@@ -50,7 +55,7 @@
             this.label2.Font = new System.Drawing.Font("Georgia", 16F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(257, 9);
+            this.label2.Location = new System.Drawing.Point(252, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(391, 44);
             this.label2.TabIndex = 2;
@@ -68,13 +73,13 @@
             this.lblFirstName.Text = "First name";
             this.lblFirstName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox1
+            // txtFirstName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(348, 109);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(475, 30);
-            this.textBox1.TabIndex = 4;
+            this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.Location = new System.Drawing.Point(348, 109);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(475, 30);
+            this.txtFirstName.TabIndex = 4;
             // 
             // lblLastName
             // 
@@ -87,13 +92,13 @@
             this.lblLastName.Text = "Last name";
             this.lblLastName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox2
+            // txtLastName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(348, 192);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(475, 30);
-            this.textBox2.TabIndex = 4;
+            this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastName.Location = new System.Drawing.Point(348, 192);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(475, 30);
+            this.txtLastName.TabIndex = 4;
             // 
             // lblEmail
             // 
@@ -106,13 +111,13 @@
             this.lblEmail.Text = "Your Email";
             this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(348, 275);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(475, 30);
-            this.textBox3.TabIndex = 4;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(348, 275);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(475, 30);
+            this.txtEmail.TabIndex = 4;
             // 
             // lblPassword
             // 
@@ -125,13 +130,14 @@
             this.lblPassword.Text = "Password";
             this.lblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox4
+            // txtPssword
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(348, 358);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(475, 30);
-            this.textBox4.TabIndex = 4;
+            this.txtPssword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPssword.Location = new System.Drawing.Point(348, 358);
+            this.txtPssword.Name = "txtPssword";
+            this.txtPssword.PasswordChar = '#';
+            this.txtPssword.Size = new System.Drawing.Size(475, 30);
+            this.txtPssword.TabIndex = 4;
             // 
             // lblConfirmPassword
             // 
@@ -144,13 +150,14 @@
             this.lblConfirmPassword.Text = "Confirm Password";
             this.lblConfirmPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox5
+            // txtConfirmPassword
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(348, 441);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(475, 30);
-            this.textBox5.TabIndex = 4;
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPassword.Location = new System.Drawing.Point(348, 441);
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.PasswordChar = '#';
+            this.txtConfirmPassword.Size = new System.Drawing.Size(475, 30);
+            this.txtConfirmPassword.TabIndex = 4;
             // 
             // lblPhoneNumber
             // 
@@ -163,13 +170,13 @@
             this.lblPhoneNumber.Text = "Phone Number";
             this.lblPhoneNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox6
+            // txtPhoneNumber
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(348, 524);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(475, 30);
-            this.textBox6.TabIndex = 4;
+            this.txtPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhoneNumber.Location = new System.Drawing.Point(348, 524);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(475, 30);
+            this.txtPhoneNumber.TabIndex = 4;
             // 
             // lblBirthDay
             // 
@@ -182,38 +189,90 @@
             this.lblBirthDay.Text = "Your Birth";
             this.lblBirthDay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // maskedTextBox1
+            // dtpBirthDay
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(348, 610);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(475, 26);
-            this.maskedTextBox1.TabIndex = 5;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.dtpBirthDay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpBirthDay.Location = new System.Drawing.Point(348, 612);
+            this.dtpBirthDay.Name = "dtpBirthDay";
+            this.dtpBirthDay.Size = new System.Drawing.Size(475, 26);
+            this.dtpBirthDay.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(315, 813);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(214, 78);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Sign In";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.ForeColor = System.Drawing.Color.Red;
+            this.checkBox1.Location = new System.Drawing.Point(38, 732);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(293, 24);
+            this.checkBox1.TabIndex = 7;
+            this.checkBox1.Text = "I accept that I can have one account";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.ForeColor = System.Drawing.Color.Red;
+            this.checkBox2.Location = new System.Drawing.Point(38, 762);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(270, 24);
+            this.checkBox2.TabIndex = 7;
+            this.checkBox2.Text = "I accept the terms and conditions";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.ForeColor = System.Drawing.Color.Red;
+            this.checkBox3.Location = new System.Drawing.Point(38, 702);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(111, 24);
+            this.checkBox3.TabIndex = 7;
+            this.checkBox3.Text = "I accept all";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // frmSignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(894, 791);
-            this.Controls.Add(this.maskedTextBox1);
+            this.ClientSize = new System.Drawing.Size(894, 903);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dtpBirthDay);
             this.Controls.Add(this.lblBirthDay);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtPhoneNumber);
             this.Controls.Add(this.lblPhoneNumber);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtConfirmPassword);
             this.Controls.Add(this.lblConfirmPassword);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtPssword);
             this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.lblLastName);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmSignIn";
-            this.Text = "frmSignIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Create new account";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,18 +282,22 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblFirstName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Label lblLastName;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPssword;
         private System.Windows.Forms.Label lblConfirmPassword;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtConfirmPassword;
         private System.Windows.Forms.Label lblPhoneNumber;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.Label lblBirthDay;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.DateTimePicker dtpBirthDay;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
     }
 }

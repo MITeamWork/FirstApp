@@ -156,6 +156,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentHub";
             ((System.ComponentModel.ISupportInitialize)(this.pbSignIn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogin)).EndInit();

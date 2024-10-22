@@ -15,6 +15,9 @@ namespace FirstApp
         public frmSignIn()
         {
             InitializeComponent();
+
+            this.Height = 650;
+            this.Width = 588;
         }
     }
 }
