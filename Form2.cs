@@ -10,17 +10,14 @@ using System.Windows.Forms;
 
 namespace FirstApp
 {
-    public partial class frmMainForm : Form
+    public partial class frmLogin : Form
     {
-        public frmMainForm()
+        public frmLogin()
         {
             InitializeComponent();
-        }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-            Form form = new frmLogin();
-            form.ShowDialog();
+            this.Height = 600;
+            this.Width = 450;
         }
     }
 }
